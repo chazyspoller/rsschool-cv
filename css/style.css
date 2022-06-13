@@ -443,10 +443,17 @@ ul {
   font-display: swap;
   src: url("../assets/fonts/comfortaa-bold.woff2") format("woff2"), url("../assets/fonts/comfortaa-bold.woff") format("woff");
 }
+.section-title {
+  margin: 0;
+  font: 700 30px/1em "Comfortaa", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
 .page-header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10;
   width: 100%;
   padding: 20px 0;
 }
@@ -551,19 +558,17 @@ ul {
       -ms-flex-align: center;
           align-items: center;
 }
-.intro__wrapper p,
-.intro__wrapper h2 {
+.intro__wrapper p {
   font: 700 30px/1em "Comfortaa", "Arial", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-}
-.intro__wrapper p {
   margin-bottom: 10vh;
 }
-.intro__wrapper h2 {
+.intro__wrapper h1 {
   margin-bottom: 5vh;
+  letter-spacing: 0.5rem;
 }
-.intro__wrapper h3 {
+.intro__wrapper h2 {
   font: 700 24px/1em "Comfortaa", "Arial", sans-serif;
 }
 
@@ -606,4 +611,15 @@ ul {
      object-fit: cover;
   position: relative;
   z-index: -1;
+}
+
+.about {
+  padding: 80px 120px;
+}
+
+.portfolio__wrapper h2 {
+  margin-bottom: 30px;
+}
+.portfolio__wrapper p:not(:last-of-type) {
+  margin-bottom: 15px;
 }
