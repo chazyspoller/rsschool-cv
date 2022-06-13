@@ -707,8 +707,8 @@ ul {
 .education__courses-item {
   position: relative;
   padding: 25px 25px 60px 25px;
-  -webkit-box-shadow: 0 0 5px #FFFFFF, 0 0 8px #FFFFFF, 0 0 20px #fcb603, 0 0 30px #fcb603, 0 0 40px #fcb603, inset 0 0 5px #FFFFFF, inset 0 0 30px #fcb603;
-          box-shadow: 0 0 5px #FFFFFF, 0 0 8px #FFFFFF, 0 0 20px #fcb603, 0 0 30px #fcb603, 0 0 40px #fcb603, inset 0 0 5px #FFFFFF, inset 0 0 30px #fcb603;
+  -webkit-box-shadow: 0 0 5px #FFFFFF, 0 0 8px #FFFFFF, 0 0 20px #fcb603, 0 0 30px #fcb603, inset 0 0 5px #FFFFFF, inset 0 0 30px #fcb603;
+          box-shadow: 0 0 5px #FFFFFF, 0 0 8px #FFFFFF, 0 0 20px #fcb603, 0 0 30px #fcb603, inset 0 0 5px #FFFFFF, inset 0 0 30px #fcb603;
 }
 .education__courses-item::before {
   content: "in progress";
@@ -732,8 +732,8 @@ ul {
 
 .education__courses-item--completed {
   grid-row: span 2;
-  -webkit-box-shadow: 0 0 5px #FFFFFF, 0 0 8px #FFFFFF, 0 0 20px #10954c, 0 0 30px #10954c, 0 0 40px #10954c, inset 0 0 5px #FFFFFF, inset 0 0 30px #10954c;
-          box-shadow: 0 0 5px #FFFFFF, 0 0 8px #FFFFFF, 0 0 20px #10954c, 0 0 30px #10954c, 0 0 40px #10954c, inset 0 0 5px #FFFFFF, inset 0 0 30px #10954c;
+  -webkit-box-shadow: 0 0 5px #FFFFFF, 0 0 8px #FFFFFF, 0 0 20px #10954c, 0 0 30px #10954c, inset 0 0 5px #FFFFFF, inset 0 0 30px #10954c;
+          box-shadow: 0 0 5px #FFFFFF, 0 0 8px #FFFFFF, 0 0 20px #10954c, 0 0 30px #10954c, inset 0 0 5px #FFFFFF, inset 0 0 30px #10954c;
 }
 .education__courses-item--completed::before {
   content: "completed";
@@ -752,4 +752,40 @@ ul {
 
 .education__courses-item--completed > .education__subcourses-list li {
   background-color: rgba(16, 149, 76, 0.4);
+}
+
+.code {
+  padding: 40px 0;
+}
+.code h2 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.code__example {
+  padding: 25px;
+  background: linear-gradient(66deg, rgba(80, 0, 144, 0.5) 0%, rgba(69, 0, 114, 0.5) 50%, rgba(4, 0, 82, 0.5) 100%);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 20px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 0 20px #500090, 0 0 30px #500090;
+          box-shadow: 0 0 20px #500090, 0 0 30px #500090;
+}
+
+.code__init {
+  color: #fcb603;
+}
+
+.code__symbols {
+  color: #f151e6;
+}
+
+.code__method {
+  color: #10954c;
+}
+
+.code__variables {
+  color: #4a7ce8;
 }

@@ -153,6 +153,36 @@
         </div>
       </div>
     </section>
+    <section class="code" id="code">
+      <div class="container">
+        <h2 class="section-title">Code Example</h2>
+        <div class="code__example">
+          <pre><code><span class="code__init">const</span> linksWithScroll <span class="code__symbols">=</span> document.<span class="code__method">querySelectorAll</span>('<span class="code__variables">[data-link-scroll]</span>');</code></pre>
+
+          <pre><code><span class="code__init">const</span> <span class="code__method">scrollToElement</span> <span class="code__symbols">=</span> (<span class="code__method">evt</span>) <span class="code__symbols">=></span> {</code></pre>
+          <pre><code>  <span class="code__init">const</span> id <span class="code__symbols">=</span> evt.target.<span class="code__method">closest</span>('<span class="code__variables">a</span>').<span class="code__method">getAttribute</span>('<span class="code__variables">href</span>');</code></pre>
+          <pre><code>  <span class="code__init">const</span> elementToGo <span class="code__symbols">=</span> id.length > 1 <span class="code__symbols">?</span> document.<span class="code__method">querySelector</span>(id) <span class="code__symbols">:</span> null;</code></pre>
+
+          <pre><code>  <span class="code__method">if</span> (id.length <span class="code__symbols">></span> 1) {</code></pre>
+          <pre><code>    evt.<span class="code__method">preventDefault</span>();</code></pre>
+          <pre><code>  }</code></pre>
+
+          <pre><code>  <span class="code__method">if</span> (elementToGo) {</code></pre>
+          <pre><code>    elementToGo.<span class="code__method">scrollIntoView</span>({</code></pre>
+          <pre><code>      behavior: '<span class="code__variables">smooth</span>',</code></pre>
+          <pre><code>      block: '<span class="code__variables">start</span>',</code></pre>
+          <pre><code>    });</code></pre>
+          <pre><code>  }</code></pre>
+          <pre><code>};</code></pre>
+
+          <pre><code>  <span class="code__init">const</span> <span class="code__method">activateScroll</span> <span class="code__symbols">=</span> () <span class="code__symbols">=></span> {</code></pre>
+          <pre><code>  if (linksWithScroll.length) {</code></pre>
+          <pre><code>    linksWithScroll.<span class="code__method">forEach</span>((link) <span class="code__symbols">=></span> link.<span class="code__method">addEventListener</span>('<span class="code__variables">click</span>', scrollToElement));</code></pre>
+          <pre><code>  }</code></pre>
+          <pre><code>};</code></pre>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
     <div class="container"></div>
