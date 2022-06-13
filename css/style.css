@@ -623,3 +623,36 @@ ul {
 .portfolio__wrapper p:not(:last-of-type) {
   margin-bottom: 15px;
 }
+
+.skills {
+  padding: 50px 0;
+}
+
+.skills__wrapper {
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px #FFFFFF, 0 0 8px #FFFFFF, 0 0 20px #500090, 0 0 30px #500090, 0 0 40px #500090, inset 0 0 5px #FFFFFF, inset 0 0 30px #500090;
+          box-shadow: 0 0 5px #FFFFFF, 0 0 8px #FFFFFF, 0 0 20px #500090, 0 0 30px #500090, 0 0 40px #500090, inset 0 0 5px #FFFFFF, inset 0 0 30px #500090;
+}
+.skills__wrapper h2 {
+  position: relative;
+  z-index: -1;
+  padding: 20px;
+  border-bottom: 3px solid #FFFFFF;
+  -webkit-box-shadow: 0 1px 5px #FFFFFF, 0 1px 8px #FFFFFF, 0 1px 20px #500090, 0 1px 30px #500090, 0 1px 40px #500090, inset 0 -1px 5px #FFFFFF, inset 0 -6px 5px #500090;
+          box-shadow: 0 1px 5px #FFFFFF, 0 1px 8px #FFFFFF, 0 1px 20px #500090, 0 1px 30px #500090, 0 1px 40px #500090, inset 0 -1px 5px #FFFFFF, inset 0 -6px 5px #500090;
+}
+
+.skills__list {
+  padding: 35px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: -webkit-max-content -webkit-max-content -webkit-max-content;
+  grid-template-rows: max-content max-content max-content;
+  gap: 15px;
+}
+
+.skills__list-item {
+  border: 1px solid red;
+  justify-self: center;
+}
