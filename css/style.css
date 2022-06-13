@@ -486,7 +486,7 @@ ul {
 .page-header__menu-item a {
   text-align: center;
   display: block;
-  line-height: 50px;
+  line-height: 40px;
   color: #FFFFFF;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -496,4 +496,114 @@ ul {
 }
 .page-header__menu-item a:active {
   text-shadow: 0 0 5px #500090, 0 0 10px #500090, 0 0 20px #FFFFFF, 0 0 40px #500090, 0 0 80px #500090, 0 0 90px #500090, 0 0 100px #500090, 0 0 150px #500090;
+}
+
+@-webkit-keyframes scaling {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaling {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+.intro {
+  min-height: 100vh;
+  padding: 15vh 0 5vh 0;
+  background: #500090 url("../assets/img/bg.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+
+.intro > .container {
+  height: 100%;
+}
+
+.intro__wrapper {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.intro__wrapper p,
+.intro__wrapper h2 {
+  font: 700 30px/1em "Comfortaa", "Arial", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+.intro__wrapper p {
+  margin-bottom: 10vh;
+}
+.intro__wrapper h2 {
+  margin-bottom: 5vh;
+}
+.intro__wrapper h3 {
+  font: 700 24px/1em "Comfortaa", "Arial", sans-serif;
+}
+
+.intro__avatar {
+  position: relative;
+  z-index: 1;
+  width: 40vh;
+  height: 40vh;
+  margin-bottom: 10vh;
+}
+.intro__avatar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-animation: scaling 4s infinite ease-in;
+          animation: scaling 4s infinite ease-in;
+  -webkit-box-shadow: 0 0 5px #500090, 0 0 10px #500090, 0 0 20px #500090, 0 0 40px #500090, 0 0 80px #500090, 0 0 90px #FFFFFF;
+          box-shadow: 0 0 5px #500090, 0 0 10px #500090, 0 0 20px #500090, 0 0 40px #500090, 0 0 80px #500090, 0 0 90px #FFFFFF;
+}
+.intro__avatar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: url("../assets/svg/main-neon-circle.svg") 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+.intro__avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  z-index: -1;
 }
