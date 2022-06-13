@@ -367,6 +367,7 @@ html {
   line-height: 24px;
   font-family: Comfortaa, Arial, sans-serif;
   color: #FFFFFF;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -447,59 +448,52 @@ ul {
   top: 0;
   left: 0;
   width: 100%;
-  background: radial-gradient(circle, #500090, #130068);
-  border-radius: 0 0 50% 50%;
-  overflow: hidden;
+  padding: 20px 0;
 }
 
-.page-header > .container {
-  height: 100%;
-}
-
-.page-header__wrapper {
-  max-width: 60%;
-  height: 100%;
-  margin: 0 auto;
+.page-header__main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .page-header__menu {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 85%;
           flex: 0 0 85%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 -12px;
 }
 
 .page-header__menu-item {
   padding: 0 12px;
-  height: 100%;
   font: 700 18px/1em "Comfortaa", "Arial", sans-serif;
-  overflow: hidden;
 }
 .page-header__menu-item a {
-  position: relative;
   text-align: center;
   display: block;
-  padding: 25px 15px;
+  line-height: 50px;
   color: #FFFFFF;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
-.page-header__menu-item a::before {
-  content: attr(data-link-text);
-  position: absolute;
-  top: 105%;
-  left: 0;
-  color: #fcb603;
-}
 .page-header__menu-item a:hover, .page-header__menu-item a:focus-visible {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #fcb603), color-stop(30%, rgba(0, 0, 0, 0)));
-  background: linear-gradient(0deg, #fcb603 5%, rgba(0, 0, 0, 0) 30%);
+  text-shadow: 0 0 5px #500090, 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 40px #500090, 0 0 80px #500090, 0 0 90px #500090, 0 0 100px #500090, 0 0 150px #FFFFFF;
 }
-.page-header__menu-item a:active::before {
-  color: #500090;
+.page-header__menu-item a:active {
+  text-shadow: 0 0 5px #500090, 0 0 10px #500090, 0 0 20px #FFFFFF, 0 0 40px #500090, 0 0 80px #500090, 0 0 90px #500090, 0 0 100px #500090, 0 0 150px #500090;
 }
