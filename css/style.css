@@ -482,10 +482,10 @@ ul {
     background-color: rgba(80, 0, 144, 0);
   }
   50% {
-    background-color: rgba(80, 0, 144, 0.2);
+    background-color: rgba(80, 0, 144, 0.3);
   }
   100% {
-    background-color: rgba(80, 0, 144, 0.4);
+    background-color: rgba(80, 0, 144, 0.6);
   }
 }
 
@@ -494,10 +494,10 @@ ul {
     background-color: rgba(80, 0, 144, 0);
   }
   50% {
-    background-color: rgba(80, 0, 144, 0.2);
+    background-color: rgba(80, 0, 144, 0.3);
   }
   100% {
-    background-color: rgba(80, 0, 144, 0.4);
+    background-color: rgba(80, 0, 144, 0.6);
   }
 }
 .page-header {
@@ -644,10 +644,10 @@ ul {
   padding: 80px 120px 60px;
 }
 
-.portfolio__wrapper h2 {
+.about__wrapper h2 {
   margin-bottom: 30px;
 }
-.portfolio__wrapper p:not(:last-of-type) {
+.about__wrapper p:not(:last-of-type) {
   margin-bottom: 15px;
 }
 

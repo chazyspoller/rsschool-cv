@@ -19,7 +19,7 @@
   <header class="page-header">
     <div class="container">
       <nav class="page-header__main-nav">
-        <img src="assets/svg/logo.svg" alt="Logo KI">
+        <img src="assets/svg/logo.svg" alt="Logo KI" width="28" height="39">
         <ul class="page-header__menu">
           <li class="page-header__menu-item">
             <a href="#about">About me</a>
@@ -58,7 +58,7 @@
     </section>
     <section class="about" id="about">
       <div class="container">
-        <div class="portfolio__wrapper">
+        <div class="about__wrapper">
           <h2 class="section-title">About me</h2>
 
           <p>After graduation, it was necessary to determine the direction of development and I became interested in
@@ -84,13 +84,13 @@
               <p>CSS3</p>
             </li>
             <li class="skills__list-item skills__list-item--sass">
-              <p>Sass(SCSS)</p>
+              <p>Sass (SCSS)</p>
             </li>
             <li class="skills__list-item skills__list-item--less">
               <p>Less</p>
             </li>
             <li class="skills__list-item skills__list-item--js">
-              <p>JavaScript(basic)</p>
+              <p>JavaScript (basic)</p>
             </li>
             <li class="skills__list-item skills__list-item--bem">
               <p>BEM</p>
@@ -201,7 +201,7 @@
           <h2 class="section-title">Education</h2>
           <div class="education__university">
             <h3>Moscow State Technological University &laquo;STANKIN&raquo;</h3>
-            <p>Computer science and engineering<span>(by profession, a system analyst)</span></p>
+            <p>Computer science and engineering<span>(profession - system analyst)</span></p>
           </div>
           <ul class="education__courses-list">
             <li class="education__courses-item education__courses-item--completed">
@@ -250,15 +250,18 @@
         <h2 class="section-title">Code Example</h2>
         <div class="code__example">
           <pre><code><span class="code__init">const</span> linksWithScroll <span class="code__symbols">=</span> document.<span class="code__method">querySelectorAll</span>('<span class="code__variables">[data-link-scroll]</span>');</code></pre>
-
+          <pre>
+          </pre>
           <pre><code><span class="code__init">const</span> <span class="code__method">scrollToElement</span> <span class="code__symbols">=</span> (<span class="code__method">evt</span>) <span class="code__symbols">=></span> {</code></pre>
           <pre><code>  <span class="code__init">const</span> id <span class="code__symbols">=</span> evt.target.<span class="code__method">closest</span>('<span class="code__variables">a</span>').<span class="code__method">getAttribute</span>('<span class="code__variables">href</span>');</code></pre>
           <pre><code>  <span class="code__init">const</span> elementToGo <span class="code__symbols">=</span> id.length > 1 <span class="code__symbols">?</span> document.<span class="code__method">querySelector</span>(id) <span class="code__symbols">:</span> null;</code></pre>
-
+          <pre>
+          </pre>
           <pre><code>  <span class="code__method">if</span> (id.length <span class="code__symbols">></span> 1) {</code></pre>
           <pre><code>    evt.<span class="code__method">preventDefault</span>();</code></pre>
           <pre><code>  }</code></pre>
-
+          <pre>
+          </pre>
           <pre><code>  <span class="code__method">if</span> (elementToGo) {</code></pre>
           <pre><code>    elementToGo.<span class="code__method">scrollIntoView</span>({</code></pre>
           <pre><code>      behavior: '<span class="code__variables">smooth</span>',</code></pre>
@@ -266,8 +269,9 @@
           <pre><code>    });</code></pre>
           <pre><code>  }</code></pre>
           <pre><code>};</code></pre>
-
-          <pre><code>  <span class="code__init">const</span> <span class="code__method">activateScroll</span> <span class="code__symbols">=</span> () <span class="code__symbols">=></span> {</code></pre>
+          <pre>
+          </pre>
+          <pre><code><span class="code__init">const</span> <span class="code__method">activateScroll</span> <span class="code__symbols">=</span> () <span class="code__symbols">=></span> {</code></pre>
           <pre><code>  if (linksWithScroll.length) {</code></pre>
           <pre><code>    linksWithScroll.<span class="code__method">forEach</span>((link) <span class="code__symbols">=></span> link.<span class="code__method">addEventListener</span>('<span class="code__variables">click</span>', scrollToElement));</code></pre>
           <pre><code>  }</code></pre>
