@@ -449,6 +449,29 @@ ul {
   text-transform: uppercase;
 }
 
+@-webkit-keyframes riseBC {
+  0% {
+    background-color: rgba(80, 0, 144, 0);
+  }
+  50% {
+    background-color: rgba(80, 0, 144, 0.2);
+  }
+  100% {
+    background-color: rgba(80, 0, 144, 0.4);
+  }
+}
+
+@keyframes riseBC {
+  0% {
+    background-color: rgba(80, 0, 144, 0);
+  }
+  50% {
+    background-color: rgba(80, 0, 144, 0.2);
+  }
+  100% {
+    background-color: rgba(80, 0, 144, 0.4);
+  }
+}
 .page-header {
   position: fixed;
   top: 0;
@@ -456,6 +479,11 @@ ul {
   z-index: 10;
   width: 100%;
   padding: 20px 0;
+}
+
+.page-header--scroll {
+  -webkit-animation: riseBC 1s 1 forwards;
+          animation: riseBC 1s 1 forwards;
 }
 
 .page-header__main-nav {
