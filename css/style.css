@@ -646,14 +646,75 @@ ul {
 .skills__list {
   padding: 35px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: -webkit-max-content -webkit-max-content -webkit-max-content;
   grid-template-rows: max-content max-content max-content;
-  gap: 15px;
+  gap: 25px 15px;
 }
 
 .skills__list-item {
   justify-self: center;
+  min-width: 50px;
+  padding: 60px 0 0 0;
+  text-align: center;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.skills__list-item--html {
+  background-image: url("../assets/svg/icon-html.svg");
+}
+
+.skills__list-item--css {
+  background-image: url("../assets/svg/icon-css.svg");
+}
+
+.skills__list-item--sass {
+  background-image: url("../assets/svg/icon-sass.svg");
+}
+
+.skills__list-item--less {
+  background-image: url("../assets/svg/icon-less.svg");
+}
+
+.skills__list-item--js {
+  background-image: url("../assets/svg/icon-js.svg");
+}
+
+.skills__list-item--bem {
+  background-image: url("../assets/svg/icon-bem.svg");
+}
+
+.skills__list-item--git {
+  background-image: url("../assets/svg/icon-git.svg");
+}
+
+.skills__list-item--github {
+  background-image: url("../assets/svg/icon-github.svg");
+}
+
+.skills__list-item--gulp {
+  background-image: url("../assets/svg/icon-gulp.svg");
+}
+
+.skills__list-item--design {
+  background-image: url("../assets/svg/icon-design.svg");
+}
+
+.skills__list-item--vscode {
+  background-image: url("../assets/svg/icon-vscode.svg");
+}
+
+.skills__list-item--figma {
+  background-image: url("../assets/svg/icon-figma.svg");
+}
+
+.skills__list-item--photoshop {
+  background-image: url("../assets/svg/icon-photoshop.svg");
+}
+
+.skills__list-item--illustrator {
+  background-image: url("../assets/svg/icon-illustrator.svg");
 }
 
 .education {
@@ -787,8 +848,6 @@ ul {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .language__item {
