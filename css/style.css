@@ -707,6 +707,7 @@ ul {
 .education__courses-item {
   position: relative;
   padding: 25px 25px 60px 25px;
+  border-radius: 5px;
   -webkit-box-shadow: 0 0 5px #FFFFFF, 0 0 8px #FFFFFF, 0 0 20px #fcb603, 0 0 30px #fcb603, inset 0 0 5px #FFFFFF, inset 0 0 30px #fcb603;
           box-shadow: 0 0 5px #FFFFFF, 0 0 8px #FFFFFF, 0 0 20px #fcb603, 0 0 30px #fcb603, inset 0 0 5px #FFFFFF, inset 0 0 30px #fcb603;
 }
@@ -718,6 +719,7 @@ ul {
   width: 100%;
   padding: 10px 0;
   font: 400 25px/1em "Comfortaa", "Arial", sans-serif;
+  word-wrap: break-word;
   letter-spacing: 0.6em;
   text-align: center;
   background-color: rgba(252, 182, 3, 0.2);
@@ -754,6 +756,68 @@ ul {
   background-color: rgba(16, 149, 76, 0.4);
 }
 
+.language {
+  padding: 50px 0;
+}
+
+.language__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.language__wrapper h2 {
+  margin-right: 50px;
+}
+
+.language__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.language__item {
+  padding: 20px;
+  background-color: #000000;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 20px #000000, 0 0 30px #FFFFFF;
+          box-shadow: 0 0 20px #000000, 0 0 30px #FFFFFF;
+}
+.language__item:not(:last-of-type) {
+  position: relative;
+  margin-right: 100px;
+}
+.language__item:not(:last-of-type)::before, .language__item:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -65px;
+  width: 30px;
+  height: 2px;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 0 5px #FFFFFF, 0 0 8px #FFFFFF, 0 0 20px #500090, 0 0 30px #500090, inset 0 0 5px #FFFFFF, inset 0 0 30px #500090;
+          box-shadow: 0 0 5px #FFFFFF, 0 0 8px #FFFFFF, 0 0 20px #500090, 0 0 30px #500090, inset 0 0 5px #FFFFFF, inset 0 0 30px #500090;
+}
+.language__item:not(:last-of-type)::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
 .code {
   padding: 40px 0;
 }
