@@ -912,3 +912,49 @@ ul {
 .code__variables {
   color: #4a7ce8;
 }
+
+.page-footer {
+  padding: 30px 0;
+  border-top: 1px solid #FFFFFF;
+}
+
+.page-footer__contacts-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-footer__item a {
+  color: #FFFFFF;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.page-footer__item a:hover, .page-footer__item a:focus-visible {
+  text-shadow: 0 0 5px #500090, 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 40px #500090, 0 0 80px #500090, 0 0 90px #500090, 0 0 100px #500090, 0 0 150px #FFFFFF;
+}
+.page-footer__item a:active {
+  text-shadow: 0 0 5px #500090, 0 0 10px #500090, 0 0 20px #FFFFFF, 0 0 40px #500090, 0 0 80px #500090, 0 0 90px #500090, 0 0 100px #500090, 0 0 150px #500090;
+}
+
+.page-footer__item--rsschool a {
+  display: block;
+  height: 100%;
+}
+.page-footer__item--rsschool a:hover, .page-footer__item--rsschool a:focus-visible {
+  opacity: 0.5;
+}
+.page-footer__item--rsschool a:active {
+  opacity: 0.2;
+}
+
+.page-footer__item--github {
+  padding: 0 0 0 30px;
+  background: url("../assets/svg/icon-github.svg") left center no-repeat;
+  background-size: 15px 15px;
+}
