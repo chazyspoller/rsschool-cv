@@ -63,10 +63,16 @@ tabsBtnsBox.addEventListener('click', (evt) => {
 
 ## Experience
 
+_Future_
+
 ## Education
 
-**STANKIN Moscow State Technical University** Information Technologies and Control Systems, Computer Science and Computer Engineering
+**STANKIN Moscow State Technical University** Information Technologies and Control Systems,
+
+Computer Science and Computer Engineering
 
 ## Language
 
-**English** B1 INTERMEDIATE
+**English**
+
+B1 INTERMEDIATE
