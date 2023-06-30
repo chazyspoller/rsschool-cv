@@ -67,8 +67,9 @@ _Future_
 
 ## Education
 
-**STANKIN Moscow State Technical University** Information Technologies and Control Systems,
+**STANKIN Moscow State Technical University** 
 
+Information Technologies and Control Systems,
 Computer Science and Computer Engineering
 
 ## Language
