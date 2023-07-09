@@ -102,7 +102,7 @@ a {
 }
 
 .light .page-header__theme-btn {
-  background: rgba(255, 255, 255, 0.6) url(../img/dark.svg) center center no-repeat;
+  background: rgba(255, 255, 255, 0.6) url(img/dark.svg) center center no-repeat;
   background-size: 70%;
 }
 
@@ -308,7 +308,7 @@ a {
   height: 50px;
   border: none;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.6) url(../img/light.svg) center center no-repeat;
+  background: rgba(0, 0, 0, 0.6) url(img/light.svg) center center no-repeat;
   background-size: 70%;
   border: 2px outset rgba(122, 122, 122, 0.4);
   box-shadow: var(--shadow-icons);
