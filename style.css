@@ -720,7 +720,7 @@ h2 {
   z-index: -1;
   width: 0;
   height: 0;
-  border-bottom: 330px solid rgba(14, 14, 14, 0.5);
+  border-bottom: 250px solid rgba(14, 14, 14, 0.5);
   border-top: transparent;
   border-right: 120px solid transparent;
   border-left: 120px solid transparent;
