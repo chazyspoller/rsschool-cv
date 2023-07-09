@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preload" href="/fonts/krona-one.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/krona-one.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="/fonts/bruno-ace.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/bruno-ace.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="/fonts/iceland.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/iceland.woff" as="font" type="font/woff" crossorigin>
+  <title>KI CV</title>
+</head>
+
+<body>
+  <script defer src="script.js"></script>
+  <header class="page-header">
+    <button class="page-header__menu-btn menu-btn" title="Menu" aria-label="Menu">
+      <span></span>
+    </button>
+    <nav class="page-header__menu">
+      <ul class="page-header__menu-list">
+        <li class="page-header__menu-item" style="--t:0s">
+          <a href="#about">
+            <img src="img/about.svg" alt="About me" title="About me">
+          </a>
+        </li>
+        <li class="page-header__menu-item" style="--t:0.25s">
+          <a href="#skills">
+            <img src="img/skills.svg" alt="Skills" title="Skills">
+          </a>
+        </li>
+        <li class="page-header__menu-item" style="--t:0.5s">
+          <a href="#projects">
+            <img src="img/portfolio.svg" alt="Projects" title="Projects">
+          </a>
+        </li>
+        <li class="page-header__menu-item" style="--t:0.75s">
+          <a href="#code-ex">
+            <img src="img/code.svg" alt="Code Example" title="Code Example">
+          </a>
+        </li>
+        <li class="page-header__menu-item" style="--t:1s">
+          <a href="#contacts">
+            <img src="img/contacts.svg" alt="Contacts" title="Contacts">
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <button class="page-header__theme-btn theme-btn" title="Theme" aria-label="Theme"></button>
+  </header>
+  <main>
+    <section class="intro">
+      <div class="wrapper">
+        <h2>Hello<br>World</h2>
+      </div>
+    </section>
+    <div class="avatar"></div>
+    <section class="about">
+      <div class="wrapper">
+        <h1>Katrine Italyankina</h1>
+        <h2>Junior Frontend Developer</h2>
+        <div class=" about__story glass-container" id="about">
+          <h2>About</h2>
+          <p>
+            I am very interested in the field of web technologies! Now I continue to study web development. I am a
+            diligent, responsible and fast-learning employee. I know how to make adaptive and cross-browser sites. I
+            keep
+            learning JavaScript and starting to learn React. I also have the skills to work with graphic programs:
+            Figma,
+            Adobe Illustrator, Adobe Photoshop, Adobe Lightroom. Absolute willingness and desire to develop and study
+            new
+            technologies.
+          </p>
+        </div>
+        <div class="about__language glass-container">
+          <h2>Languages</h2>
+          <div class="about__language-box">
+            <div>
+              <p>ENGLISH</p>
+              <span>B1</span>
+            </div>
+            <div>
+              <p>RUSSIAN</p>
+              <span>C2</span>
+            </div>
+          </div>
+        </div>
+        <div class="about__education glass-container">
+          <h2>Education</h2>
+          <h3>STANKIN Moscow State Technical University</h3>
+          <p>Information Technologies and Control Systems</p>
+          <p>Computer Science and Computer Engineering</p>
+        </div>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <div class="wrapper">
+        <h2>Skills</h2>
+        <div class="skills__list">
+          <div class="skills__group glass-container">
+            <h3>Major</h3>
+            <ul>
+              <li style="--per:90;"><span class="per">90</span><span>HTML</span></li>
+              <li style="--per:84;"><span class="per">84</span><span>CSS</span></li>
+              <li style="--per:78;"><span class="per">78</span><span>SCSS</span></li>
+              <li style="--per:42;"><span class="per">42</span><span>JavaScript</span></li>
+              <li style="--per:100;"><span class="per">100</span><span>BEM</span></li>
+            </ul>
+          </div>
+          <div class="skills__group glass-container">
+            <h3>Tools</h3>
+            <ul>
+              <li style="--per:42;"><span class="per">42</span><span>Gulp</span></li>
+              <li style="--per:56;"><span class="per">56</span><span>Git / Github</span></li>
+              <li style="--per:100;"><span class="per">100</span><span>Node.js (NPM)</span></li>
+              <li style="--per:27;"><span class="per">27</span><span>API</span></li>
+            </ul>
+          </div>
+          <div class="skills__group glass-container">
+            <h3>Graphics</h3>
+            <ul>
+              <li style="--per:74;"><span class="per">74</span><span>Figma</span></li>
+              <li style="--per:77;"><span class="per">77</span><span>Adobe Photoshop</span></li>
+              <li style="--per:83;"><span class="per">83</span><span>Adobe Illustrator</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <div class="wrapper">
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <a href="https://chazyspoller.github.io/SmartDevice/" target="_blank">
+              <img src="img/web1.jpg" alt="SmartDevice">
+            </a>
+            <div>
+              <h3>SmartDevice</h3>
+            </div>
+          </li>
+          <li>
+            <a href="https://chazyspoller.github.io/Antarctic/" target="_blank">
+              <img src="img/web2.jpg" alt="Antarctic">
+            </a>
+            <div>
+              <h3>Antarctic</h3>
+            </div>
+          </li>
+          <li>
+            <a href="https://chazyspoller.github.io/Fitness/build/" target="_blank">
+              <img src="img/web3.jpg" alt="Fitness">
+            </a>
+            <div>
+              <h3>Fitness</h3>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="code-ex">
+      <div class="wrapper">
+        <h2 id="code-ex">Code Example</h2>
+        <pre class="glass-container">
+<span class="highlight-init">const</span> tabs = document.<span class="highlight-cmd">querySelectorAll</span>(<span class="highlight-init">'.tabcontent'</span>),
+  tabsBtnsBox = document.<span class="highlight-cmd">querySelector</span>(<span class="highlight-init">'.tabheader__items'</span>),
+  tabsBtns = tabsBtnsBox.<span class="highlight-cmd">querySelectorAll</span>(<span class="highlight-init">'.tabheader__item'</span>);
+        
+<span class="highlight-init">const</span> changePreview = (type) <span class="highlight-sbl">=></span> {
+  tabs.<span class="highlight-cmd">forEach</span>((tab) <span class="highlight-sbl">=></span> {
+    if (tab.<span class="highlight-cmd">querySelector</span>(<span class="highlight-init">'.tabcontent__descr'</span>).textContent.<span class="highlight-cmd">indexOf</span>(type) <span class="highlight-sbl">!==</span> -1) {
+      tab.<span class="highlight-cmd">classList</span>.add(<span class="highlight-init">'tabcontent--open'</span>);
+    } else {
+      tab.<span class="highlight-cmd">classList</span>.remove(<span class="highlight-init">'tabcontent--open'</span>);
+    }
+  });
+};
+        
+tabsBtnsBox.<span class="highlight-cmd">addEventListener</span>(<span class="highlight-init">'click'</span>, (evt) <span class="highlight-sbl">=></span> {
+  if (evt.target.<span class="highlight-cmd">classList</span>.contains(<span class="highlight-init">'tabheader__item'</span>)) {
+    tabsBtns.<span class="highlight-cmd">forEach</span>(x <span class="highlight-sbl">=></span> x.<span class="highlight-cmd">classList</span>.remove(<span class="highlight-init">'tabheader__item_active'</span>));
+    evt.target.<span class="highlight-cmd">classList</span>.add(<span class="highlight-init">'tabheader__item_active'</span>);
+    <span class="highlight-sbl">changePreview</span>(evt.target.textContent);
+  }
+});</pre>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer" id="contacts">
+    <div class="wrapper">
+      <div class="education-info">
+        <ul>
+          <li>
+            <a href="https://github.com/chazyspoller">
+              <img src="img/github.svg" alt="Github" title="Github">
+            </a>
+          </li>
+          <li>
+            <a href="https://rs.school/js/">
+              <img src="img/rs-school.svg" alt="RSSchool-school" title="RSSchool">
+            </a>
+          </li>
+          <li>
+            <div class="education-info__year"></div>
+          </li>
+        </ul>
+      </div>
+      <div class="contacts">
+        <ul>
+          <li>
+            <a class="contacts__mail" href="mailto:chazyspoller@gmail.com">
+              chazyspoller@gmail.com
+            </a>
+          </li>
+          <li>
+            <a class="contacts__telegram" href="https://t.me/KateItaly">
+              @KateItaly
+            </a>
+          </li>
+          <li>
+            <a class="contacts__discord" href="https://discordapp.com/users/856914048939720716/">
+              ki.italy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
